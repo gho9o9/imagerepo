@@ -17,8 +17,8 @@ GPT-4 のパラメータは 100兆 以上
   - Cog Search（セマンティック検索使って絞り込み）
     - [Azure で ChatGPT × Cognitive Search を使ったエンタープライズサーチを実現 - Qiita](https://qiita.com/nohanaga/items/803c09b5a3a4e2d1776f)
 
-[Revolutionize your Enterprise Data with ChatGPT: Next-gen Apps w/ Azure OpenAI and Cognitive Search](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)
-[Azure で ChatGPT × Cognitive Search を使ったエンタープライズサーチを実現 - Qiita](https://qiita.com/nohanaga/items/803c09b5a3a4e2d1776f)
+[Revolutionize your Enterprise Data with ChatGPT: Next-gen Apps w/ Azure OpenAI and Cognitive Search](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087)  
+[Azure で ChatGPT × Cognitive Search を使ったエンタープライズサーチを実現 - Qiita](https://qiita.com/nohanaga/items/803c09b5a3a4e2d1776f)  
 ![](images/o9o9_2023-03-23-09-28-26.png)
 
 [The Future of Work With AI - Microsoft March 2023 Event](https://www.youtube.com/watch?v=Bf-dbS9CcRU&t=1229s)
