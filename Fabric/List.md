@@ -1,13 +1,17 @@
 Paste Image を利用。
 Ctrl + Alt + v でクリップボードの画像をペースト。
-https://github.com/gho9o9/imagerepo/raw/main/<カテゴリ>/images/<ファイル名>.png～ 
+https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.png
 
 ![](images/o9o9_2023-06-12-10-50-06.png)
 ![](images/o9o9_2023-06-12-10-50-15.png)  
 ![](images/o9o9_2023-06-12-10-57-20.png)
 
 
+### Databricks Migration
+#### まとめ
+![](images/o9o9_2023-06-16-16-35-10.png)
 
+#### Step by Step 
 ADB で DeltaTable を定義
 ![](images/o9o9_2023-06-14-17-07-06.png)
 ![](images/o9o9_2023-06-14-17-16-37.png)
