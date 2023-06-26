@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ![](images/o9o9_2023-04-10-11-20-50.png)
 
 
-#UC
+# UC
 ![](images/o9o9_2023-06-26-14-36-25.png)  
 ![](images/o9o9_2023-06-26-14-42-23.png)  
 ![](images/o9o9_2023-06-26-14-56-31.png)  
@@ -38,13 +38,13 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ![](images/o9o9_2023-06-26-16-40-54.png)  
 ![](images/o9o9_2023-06-26-16-50-44.png)  
 ![](images/o9o9_2023-06-26-16-52-12.png)  
-data / __unitystorage / catalogs / e94e40e2-b480-4e6d-97da-367d14b6ae79 / tables / 6a2f9cef-e362-4891-b442-8c861d6bcc50
-
+data / __unitystorage / catalogs / e94e40e2-b480-4e6d-97da-367d14b6ae79 / tables / 6a2f9cef-e362-4891-b442-8c861d6bcc50  
 ![](images/o9o9_2023-06-26-16-57-34.png)  
 ![](images/o9o9_2023-06-26-16-59-22.png)  
-
-
 ![](images/o9o9_2023-06-26-17-02-44.png)  
 ![](images/o9o9_2023-06-26-17-03-50.png)  
 ![](images/o9o9_2023-06-26-17-04-12.png)  
-unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08fd8-19c6-47eb-b62f-e57f4a915896
+unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08fd8-19c6-47eb-b62f-e57f4a915896  
+
+# Storage
+![](images/o9o9_2023-06-26-18-57-30.png)
