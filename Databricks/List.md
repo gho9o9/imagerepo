@@ -1,6 +1,6 @@
 Paste Image を利用。
 Ctrl + Alt + v でクリップボードの画像をペースト。
-https://github.com/gho9o9/imagerepo/raw/main/～ 
+https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.png
 
 ![](images/SynapseTechBook_2023-02-02-15-17-41.png)
 ![](images/SynapseTechBook_2023-02-02-15-30-12.png)
@@ -12,3 +12,13 @@ https://github.com/gho9o9/imagerepo/raw/main/～
 ![](images/o9o9_2023-03-07-09-27-50.png)
 ![](images/o9o9_2023-04-10-11-20-07.png)
 ![](images/o9o9_2023-04-10-11-20-50.png)
+
+
+#UC
+![](images/o9o9_2023-06-26-14-36-25.png)  
+![](images/o9o9_2023-06-26-14-42-23.png)  
+![](images/o9o9_2023-06-26-14-56-31.png)  
+![](images/o9o9_2023-06-26-14-51-11.png)
+![](images/o9o9_2023-06-26-14-57-45.png)  
+![](images/o9o9_2023-06-26-14-58-53.png)  
+![](images/o9o9_2023-06-26-14-59-32.png)  
