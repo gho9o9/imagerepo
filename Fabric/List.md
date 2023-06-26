@@ -51,15 +51,15 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ![](images/o9o9_2023-06-14-20-11-22.png)
 
 ### Databricks UC DeltaTable を定義
-![](images/o9o9_2023-06-16-15-24-02.png)
+![](images/o9o9_2023-06-26-18-35-23.png)  
 
 ### UCのテーブルはフォルダパスがランダムな文字列になってしまうのでショートカット作成時のパス指定がつらい。
-![](images/o9o9_2023-06-16-15-23-53.png)
-![](images/o9o9_2023-06-16-15-24-43.png)
+![](images/o9o9_2023-06-26-18-32-53.png)  
+![](images/o9o9_2023-06-26-18-38-08.png)  
 
 ### Fabric Lakehouse ショートカットで UC DeltaTable をアタッチ
-![](images/o9o9_2023-06-16-15-31-30.png)
-![](images/o9o9_2023-06-16-15-31-53.png)
+![](images/o9o9_2023-06-26-18-47-22.png)  
+![](images/o9o9_2023-06-26-18-48-09.png)
 
 ### Fabric Lakehouse から UC DeltaTable を更新
 ![](images/o9o9_2023-06-16-15-58-16.png)
