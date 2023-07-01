@@ -2,10 +2,11 @@ Paste Image を利用。
 Ctrl + Alt + v でクリップボードの画像をペースト。
 https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.png
 
-![](images/o9o9_2023-06-12-10-50-06.png)
+![](images/o9o9_2023-06-12-10-50-06.png)  
 ![](images/o9o9_2023-06-12-10-50-15.png)  
-![](images/o9o9_2023-06-12-10-57-20.png)
-
+![](images/o9o9_2023-06-12-10-57-20.png)  
+![](images/o9o9_2023-07-01-19-01-38.png)  
+![](images/o9o9_2023-07-01-19-03-13.png)  
 
 # Databricks Migration
 ## まとめ
