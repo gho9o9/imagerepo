@@ -1,6 +1,7 @@
 Paste Image を利用。
 Ctrl + Alt + v でクリップボードの画像をペースト。
 https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.png
+![](https://raw.githubusercontent.com/gho9o9/imagerepo/main/Databricks/images/<hoge>.png)
 
 ![](images/SynapseTechBook_2023-02-02-15-17-41.png)
 ![](images/SynapseTechBook_2023-02-02-15-30-12.png)
@@ -78,3 +79,9 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 
 # Storage
 ![](images/o9o9_2023-06-26-18-57-30.png)
+
+
+# Optimize  
+![](images/o9o9_2023-08-17-08-41-21.png)  
+![](images/o9o9_2023-08-17-08-40-58.png)  
+![](images/o9o9_2023-08-17-08-41-41.png)  
