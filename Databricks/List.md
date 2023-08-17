@@ -26,6 +26,8 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ![](images/o9o9_2023-07-10-16-28-16.png)  
 ![](images/o9o9_2023-07-10-16-28-37.png)  
 
+# DBSQL
+![](images/o9o9_2023-08-17-15-45-28.png)
 
 # Workflows
 ![](images/o9o9_2023-07-10-23-18-15.png)  
@@ -91,6 +93,7 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-17-08-41-21.png)  
 ![](images/o9o9_2023-08-17-08-40-58.png)  
 ![](images/o9o9_2023-08-17-08-41-41.png)  
+![](images/o9o9_2023-08-17-13-50-57.png)  
 
 # Security
 ![](images/o9o9_2023-08-17-10-27-16.png)  
