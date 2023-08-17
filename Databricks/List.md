@@ -3,6 +3,13 @@ Ctrl + Alt + v でクリップボードの画像をペースト。
 https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.png
 ![](https://raw.githubusercontent.com/gho9o9/imagerepo/main/Databricks/images/<hoge>.png)
 
+<p  style="position:relative;width: 1000px;height: 450px;overflow: hidden;">
+<img style="margin-top:25px;" src="https://sajpstorage.blob.core.windows.net/itagaki/Optimize.png" width="1000">  
+</br>
+<img style="margin-top:25px;" src="https://raw.githubusercontent.com/gho9o9/imagerepo/main/Databricks/images/o9o9_2023-08-17-08-40-58.png" width="1000">  
+</p>
+</div>
+
 ![](images/SynapseTechBook_2023-02-02-15-17-41.png)
 ![](images/SynapseTechBook_2023-02-02-15-30-12.png)
 ![](images/o9o9_2023-03-05-10-32-40.png)
@@ -80,8 +87,15 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 # Storage
 ![](images/o9o9_2023-06-26-18-57-30.png)
 
-
 # Optimize  
 ![](images/o9o9_2023-08-17-08-41-21.png)  
 ![](images/o9o9_2023-08-17-08-40-58.png)  
 ![](images/o9o9_2023-08-17-08-41-41.png)  
+
+# Security
+![](images/o9o9_2023-08-17-10-27-16.png)  
+![](images/o9o9_2023-08-17-10-27-29.png)  
+![](images/o9o9_2023-08-17-10-27-44.png)  
+![](images/o9o9_2023-08-17-10-35-45.png)  
+![](images/o9o9_2023-08-17-10-35-58.png)  
+![](images/o9o9_2023-08-17-10-36-14.png)
