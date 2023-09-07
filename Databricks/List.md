@@ -94,7 +94,40 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-17-08-41-21.png)  
 ![](images/o9o9_2023-08-17-08-40-58.png)  
 ![](images/o9o9_2023-08-17-08-41-41.png)  
-![](images/o9o9_2023-08-17-13-50-57.png)  
+![](images/o9o9_2023-08-17-13-50-57.png)
+
+# Purview
+![](images/o9o9_2023-08-29-09-47-28.png)  
+![](images/o9o9_2023-08-29-09-47-36.png)  
+![](images/o9o9_2023-08-29-09-46-39.png)  
+![](images/o9o9_2023-08-29-09-46-53.png)  
+![](images/o9o9_2023-08-29-09-46-04.png)
+![](images/o9o9_2023-08-29-09-43-05.png)  
+![](images/o9o9_2023-08-29-09-43-43.png)  
+![](images/o9o9_2023-08-29-09-44-33.png)  
+![](images/o9o9_2023-08-29-09-44-52.png)  
+
+# w/ADF
+① コピーアクティビティ  
+コピーアクティビティは Hive Metastore のみサポート
+![](images/o9o9_2023-09-07-09-33-01.png)  
+![](images/o9o9_2023-09-07-09-33-43.png)  
+既存テーブルへのSyncのみ（テーブル新規作成は不可）
+![](images/o9o9_2023-09-07-10-03-05.png)
+パイプライン実行後にDeltaTableへの出力を確認  
+![](images/o9o9_2023-09-07-10-22-48.png)  
+
+② データフロー  
+データフローはストレージへのDelta出力をサポート
+![](images/o9o9_2023-09-07-10-04-20.png)
+![](images/o9o9_2023-09-07-10-05-45.png)  
+パイプライン実行後に UC へのカタログ登録とDeltaTableとしての出力を確認  
+![](images/o9o9_2023-09-07-10-46-50.png)  
+
+＜参考＞
+- https://learn.microsoft.com/ja-jp/azure/data-factory/connector-azure-databricks-delta-lake?tabs=data-factory
+- https://learn.microsoft.com/ja-jp/azure/data-factory/format-delta  
+
 
 # Security
 ![](images/o9o9_2023-08-17-10-27-16.png)  
@@ -112,4 +145,4 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-17-10-39-42.png)  
 ![](images/o9o9_2023-08-17-10-39-53.png)  
 ![](images/o9o9_2023-08-17-10-40-06.png)  
-![](images/o9o9_2023-08-17-10-40-25.png)
+![](images/o9o9_2023-08-17-10-40-25.png)  
