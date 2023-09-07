@@ -101,7 +101,7 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-29-09-47-36.png)  
 ![](images/o9o9_2023-08-29-09-46-39.png)  
 ![](images/o9o9_2023-08-29-09-46-53.png)  
-![](images/o9o9_2023-08-29-09-46-04.png)
+![](images/o9o9_2023-08-29-09-46-04.png)  
 ![](images/o9o9_2023-08-29-09-43-05.png)  
 ![](images/o9o9_2023-08-29-09-43-43.png)  
 ![](images/o9o9_2023-08-29-09-44-33.png)  
