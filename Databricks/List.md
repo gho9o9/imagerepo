@@ -110,6 +110,7 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 # Purview Lineage
 ![](images/o9o9_2023-09-11-17-54-59.png)  
 ![](images/o9o9_2023-09-11-18-40-29.png)  
+![](images/o9o9_2023-09-11-18-42-35.png)  
 
 # w/ADF
 ① コピーアクティビティ  
