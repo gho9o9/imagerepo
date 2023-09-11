@@ -96,7 +96,7 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-17-08-41-41.png)  
 ![](images/o9o9_2023-08-17-13-50-57.png)
 
-# Purview
+# Purview UC
 ![](images/o9o9_2023-08-29-09-47-28.png)  
 ![](images/o9o9_2023-08-29-09-47-36.png)  
 ![](images/o9o9_2023-08-29-09-46-39.png)  
@@ -106,6 +106,10 @@ unitycatalog / metastore / b0aa6069-2eb1-4c2e-b0d1-22e19233b689 / tables / 35e08
 ![](images/o9o9_2023-08-29-09-43-43.png)  
 ![](images/o9o9_2023-08-29-09-44-33.png)  
 ![](images/o9o9_2023-08-29-09-44-52.png)  
+
+# Purview Lineage
+![](images/o9o9_2023-09-11-17-54-59.png)  
+![](images/o9o9_2023-09-11-18-40-29.png)  
 
 # w/ADF
 ① コピーアクティビティ  
