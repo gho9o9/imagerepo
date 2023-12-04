@@ -27,6 +27,131 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ![](images/o9o9_2023-07-10-16-28-37.png)  
 ![](images/o9o9_2023-08-17-15-48-53.png)  
 
+# Delta Sharing
+## TL;DR
+- 組織内外にセキュアにデータ共有する機能（インプレース ＆ R/O 共有）。  
+- Databricks間共有とオープン共有があり、共有先の環境を限定しない。  
+![](images/o9o9_2023-11-29-13-28-46.png)  
+![](images/o9o9_2023-12-04-10-07-55.png)  
+![](images/o9o9_2023-11-29-13-29-54.png)  
+![](images/o9o9_2023-11-29-13-30-04.png)  
+![](images/o9o9_2023-11-29-13-31-27.png)  
+![](images/o9o9_2023-11-29-13-32-59.png)
+
+## ハンズオン
+
+### 1. 事前設定
+#### 1-1. [メタストアで Delta Sharing を有効化する](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/set-up)
+![](images/o9o9_2023-11-29-13-19-44.png)  
+
+#### 1-2. [監査ログ有効化(オプション)](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/audit-logging-provider)
+
+##### [一覧確認](https://learn.microsoft.com/ja-jp/azure/databricks/administration-guide/system-tables/#list-available-system-schemas)
+```bash
+curl -v -X GET -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azuredatabricks.net/api/2.0/unity-catalog/metastores/<metastore-id>/systemschemas"
+```  
+![](images/o9o9_2023-11-29-13-21-00.png)  
+
+##### [有効化](https://learn.microsoft.com/ja-jp/azure/databricks/administration-guide/system-tables/#enable-a-system-schema)
+```bash
+curl -v -X PUT -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azuredatabricks.net/api/2.0/unity-catalog/metastores/<metastore-id>/systemschemas/<SCHEMA_NAME>"
+```
+![](images/o9o9_2023-11-29-13-21-25.png)  
+![](images/o9o9_2023-11-29-13-21-37.png)  
+
+### 2. [Databricks 間共有](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/share-data-databricks#databricks-to-databricks-delta-sharing-workflow)
+
+#### 2-1. [送信側による共有設定](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/share-data-databricks#databricks-to-databricks-delta-sharing-workflow)
+
+##### 2-1-1. [共有の作成](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-share)
+[カタログエクスプローラー]->[Delta Sharing]->[自分が共有]->[データの共有]  
+![](images/o9o9_2023-11-29-13-21-52.png)  
+[アセットを追加]  
+![](images/o9o9_2023-11-29-13-22-00.png)  
+![](images/o9o9_2023-11-29-13-22-09.png)  
+※.オプションでタイムトラベルやCDFアクセスを許可可能  
+![](images/o9o9_2023-11-29-13-22-15.png)  
+![](images/o9o9_2023-11-29-13-22-21.png)  
+
+##### 2-1-2. [受信者の共有識別子の取得](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#request-uuid)  
+[カタログエクスプローラー]->[Delta Sharing]->[自分と共有]  
+※. 受信者の Databricks アカウント側の操作
+![](images/o9o9_2023-11-29-13-21-44.png)  
+
+##### 2-1-3. [受信者の作成](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#create-recipient-db-to-db)
+[カタログエクスプローラー]->[Delta Sharing]->[自分が共有]->[データの共有]->[新たな受信者] で受信者の共有識別子を入力  
+![](images/o9o9_2023-11-29-13-22-29.png)  
+![](images/o9o9_2023-11-29-13-22-36.png)  
+
+##### 2-1-4. [受信者へのアクセス許可](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/grant-access)  
+共有対象を選択  
+![](images/o9o9_2023-11-29-13-22-44.png)  
+![](images/o9o9_2023-11-29-13-22-51.png)  
+
+#### 2-2. [受信側での共有の利用](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/read-data-databricks)  
+[カタログエクスプローラー]->[Delta Sharing]->[自分と共有]  
+![](images/o9o9_2023-11-29-13-22-57.png)  
+[カタログを作成]  
+![](images/o9o9_2023-11-29-13-23-05.png)  
+カタログ名を設定  
+![](images/o9o9_2023-11-29-13-23-10.png)  
+![](images/o9o9_2023-11-29-13-23-22.png)  
+※ ストレージへのアクセス権が無い場合はNG（組織外だと、これは使いにくい。。。）
+![](images/o9o9_2023-11-29-13-23-29.png)  
+
+### 3. [オープン共有](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/share-data-open)  
+
+#### 3-1. [送信側による共有設定](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/share-data-open#delta-sharing-open-sharing-workflow)
+
+##### 3-1-1. [共有の作成](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-share)
+[カタログエクスプローラー]->[Delta Sharing]->[自分が共有]->[データの共有]  
+![](images/o9o9_2023-11-29-13-21-52.png)  
+[アセットを追加]  
+![](images/o9o9_2023-11-29-13-22-00.png)  
+![](images/o9o9_2023-11-29-13-22-09.png)  
+※.オプションでタイムトラベルやCDFアクセスを許可可能  
+![](images/o9o9_2023-11-29-13-22-15.png)  
+![](images/o9o9_2023-11-29-13-22-21.png)  
+
+##### 3-1-2. [受信者の作成](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#create-recipient-db-to-db)
+[カタログエクスプローラー]->[Delta Sharing]->[自分が共有]->[データの共有]->[新たな受信者]  
+※.オープン共有の場合は受信者の共有識別子の入力は不要
+![](images/o9o9_2023-11-29-13-23-38.png)  
+アクティベーションリンクを受信者に共有
+![](images/o9o9_2023-11-29-13-23-45.png)  
+![](images/o9o9_2023-11-29-13-23-50.png)  
+
+##### 3-1-3. [受信者へのアクセス許可](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/grant-access)  
+共有対象を選択  
+![](images/o9o9_2023-11-29-13-22-44.png)  
+![](images/o9o9_2023-11-29-13-22-51.png)  
+
+#### 3-2. [受信側での共有の利用](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/read-data-open)  
+
+##### 3-2-1. [アクティベーションリンクを受信者から入手](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#get-activation-link)  
+※. 送信者の Databricks アカウント側の操作
+![](images/o9o9_2023-11-29-13-24-49.png)  
+
+##### 3-2-2. [資格情報ファイルの入手](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/recipient#get-access-open)  
+アクティベーションリンクにアクセスし資格情報ファイルをダウンロードする
+![](images/o9o9_2023-11-29-13-24-53.png)  
+![](images/o9o9_2023-11-29-13-25-00.png)  
+![](images/o9o9_2023-11-29-13-25-06.png)  
+
+##### 3-2-3. [例：Power BI から共有にアクセス]  
+資格情報ファイルからエンドポイントとベアラートークンをメモ  
+![](images/o9o9_2023-11-29-13-25-12.png)  
+[データを取得]から[Delta Sharing]を選択 
+![](images/o9o9_2023-11-29-13-25-18.png)  
+メモしたエンドポイントとベアラートークンを入力  
+![](images/o9o9_2023-11-29-13-25-23.png)  
+ここから先は他のデータソースと同様の操作
+![](images/o9o9_2023-11-29-13-25-29.png)  
+![](images/o9o9_2023-11-29-13-25-34.png)  
+※. [Delta Sharing Ecosystem](https://delta.io/sharing/)
+![](images/o9o9_2023-12-04-10-07-55.png)  
+
+
 # DBSQL
 ![](images/o9o9_2023-08-17-15-45-28.png)
 
