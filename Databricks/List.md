@@ -180,13 +180,17 @@ curl -v -X PUT -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azureda
 ![](images/o9o9_2023-12-05-11-45-35.png)  
 
 # Pricing
+コスト構造
 ![](https://blog.colorkrew.com/assets/fig-1-1.png)
 DBU 単価
 ![](images/o9o9_2023-12-05-17-26-50.png)  
-DBU 係数（SQLの場合）
-![](images/o9o9_2023-12-05-17-30-32.png)  
-見積例：SQL を Small クラスターで1時間稼働した場合
-![](images/o9o9_2023-12-05-17-31-12.png)  
+DBU 係数（SQLウェアハウスの場合）
+![](images/o9o9_2023-12-05-18-45-23.png)  
+見積例
+- SQL Pro を Small クラスターの月額  
+![](images/o9o9_2023-12-05-18-48-46.png)  
+- SQL Serverless を Small クラスターの月額  
+![](images/o9o9_2023-12-05-18-48-22.png)  
 
 # DBSQL
 ![](images/o9o9_2023-08-17-15-45-28.png)
