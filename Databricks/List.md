@@ -179,6 +179,15 @@ curl -v -X PUT -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azureda
 資格情報ファイルをダウンロードされると Status が 有効化済み となる。
 ![](images/o9o9_2023-12-05-11-45-35.png)  
 
+# Pricing
+![](https://blog.colorkrew.com/assets/fig-1-1.png)
+DBU 単価
+![](images/o9o9_2023-12-05-17-26-50.png)  
+DBU 係数（SQLの場合）
+![](images/o9o9_2023-12-05-17-30-32.png)  
+見積例：SQL を Small クラスターで1時間稼働した場合
+![](images/o9o9_2023-12-05-17-31-12.png)  
+
 # DBSQL
 ![](images/o9o9_2023-08-17-15-45-28.png)
 
