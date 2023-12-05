@@ -41,8 +41,18 @@ https://raw.githubusercontent.com/gho9o9/imagerepo/main/<カテゴリ>/images/*.
 ## ハンズオン
 
 ### 1. 事前設定
-#### 1-1. [メタストアで Delta Sharing を有効化する](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/set-up)
-![](images/o9o9_2023-11-29-13-19-44.png)  
+#### 1-1. [メタストアで Delta Sharing を有効化する](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/set-up)  
+[アカウントコンソール]->[データ] から対象のメタストアを選択し [Delta Sharing] のチェックボックスをクリック
+![](images/o9o9_2023-12-05-10-53-48.png)  
+[トークンの既定有効期限を設定し有効化](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#--manage-recipient-tokens-open-sharing)  
+![](images/o9o9_2023-12-05-11-17-29.png)  
+- トークンはオープン共有の受信側が共有データにアクセスする際に利用  
+- Databricks 間共有にはトークンは利用されない（＝共有設定が存在する限り無期限）  
+- 既定の有効期限はいつでも変更可能（すでに発行済みのトークンには反映されない）
+- 発行済みトークンの有効期限は前倒し可能（後ろ倒しは不可）
+- 失効した場合はあらためてアクティベーションリンク（後述）の共有が必要  
+
+![](images/o9o9_2023-12-05-11-27-20.png)  
 
 #### 1-2. [監査ログ有効化(オプション)](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/audit-logging-provider)
 
@@ -117,7 +127,7 @@ curl -v -X PUT -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azureda
 [カタログエクスプローラー]->[Delta Sharing]->[自分が共有]->[データの共有]->[新たな受信者]  
 ※.オープン共有の場合は受信者の共有識別子の入力は不要
 ![](images/o9o9_2023-11-29-13-23-38.png)  
-アクティベーションリンクを受信者に共有
+アクティベーションリンクを受信者に共有  
 ![](images/o9o9_2023-11-29-13-23-45.png)  
 ![](images/o9o9_2023-11-29-13-23-50.png)  
 
@@ -138,19 +148,33 @@ curl -v -X PUT -H "Authorization: Bearer <PAT Token>" "https://adb-<xxx>.azureda
 ![](images/o9o9_2023-11-29-13-25-00.png)  
 ![](images/o9o9_2023-11-29-13-25-06.png)  
 
-##### 3-2-3. [例：Power BI から共有にアクセス]  
+##### 3-2-3. 例：Power BI から共有にアクセス  
 資格情報ファイルからエンドポイントとベアラートークンをメモ  
 ![](images/o9o9_2023-11-29-13-25-12.png)  
 [データを取得]から[Delta Sharing]を選択 
 ![](images/o9o9_2023-11-29-13-25-18.png)  
 メモしたエンドポイントとベアラートークンを入力  
-![](images/o9o9_2023-11-29-13-25-23.png)  
+![](images/o9o9_2023-12-05-11-42-09.png)  
+![](images/o9o9_2023-12-05-11-42-48.png)  
 ここから先は他のデータソースと同様の操作
 ![](images/o9o9_2023-11-29-13-25-29.png)  
 ![](images/o9o9_2023-11-29-13-25-34.png)  
 ※. [Delta Sharing Ecosystem](https://delta.io/sharing/)
 ![](images/o9o9_2023-12-04-10-07-55.png)  
 
+#### 3-3. [補足：トークンの管理](https://learn.microsoft.com/ja-jp/azure/databricks/data-sharing/create-recipient#--manage-recipient-tokens-open-sharing)  
+- トークンはオープン共有の受信側が共有データにアクセスする際に利用  
+- Databricks 間共有にはトークンは利用されない（＝共有設定が存在する限り無期限）  
+- 既定の有効期限はいつでも変更可能（すでに構成済みの共有には反映されない＝失効後にトークンを再発行しても構成時の有効期限が利用される）
+- 発行済みトークンの有効期限は前倒し可能（後ろ倒しは不可）
+- 失効した場合はあらためてアクティベーションリンク（後述）の共有が必要  
+
+オープン共有（トークン認証）の場合、トークンの有効期限が失効すると Status が 保留中 となりアクセスは拒否される。
+![](images/o9o9_2023-12-05-11-33-58.png)  
+共有を再開する場合はアクティベーションリンクを再共有する。
+![](images/o9o9_2023-12-05-11-38-25.png)  
+資格情報ファイルをダウンロードされると Status が 有効化済み となる。
+![](images/o9o9_2023-12-05-11-45-35.png)  
 
 # DBSQL
 ![](images/o9o9_2023-08-17-15-45-28.png)
